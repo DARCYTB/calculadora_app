@@ -1,0 +1,77 @@
+main {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+  width: 300px;
+  height: 380px;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 20px 10px 10px 10px;
+}
+
+header {
+  text-align: center;
+}
+
+.screen {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.numbers {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fila1,
+.fila2,
+.fila3,
+.fila4,
+.fila5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.fila5 button:nth-child(3) {
+  grid-column: span 2;
+}
+
+.fila1 button,
+.fila2 button,
+.fila3 button,
+.fila4 button,
+.fila5 button {
+  height: 7vh;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(70, 120, 247);
+  color: bisque;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button:active {
+    background-color: darkorange;
+}
+
+#equal {
+  width: 100%;
+}
+#delete {
+  align-items: center;
+  justify-content: center;
+}
